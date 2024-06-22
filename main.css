@@ -681,7 +681,8 @@ button[submit] {
     gap: 35px;
   }
   .products-container {
-    margin-left: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .line1__cotigories {
     padding-top: 10px;
