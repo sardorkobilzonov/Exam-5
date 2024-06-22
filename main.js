@@ -17,7 +17,7 @@ function renderProducts(products) {
 
   products.forEach((product) => {
     const li = document.createElement("li");
-    li.style.width = "250px";
+    li.style.width = "230px";
     li.style.height = "550px";
 
     const imgLink = document.createElement("a");

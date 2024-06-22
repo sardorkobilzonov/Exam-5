@@ -15,11 +15,12 @@ body {
 }
 
 .head {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 200px;
-  height: 48px;
+  /* height: 48px; */
   background-color: black;
 }
 
@@ -98,7 +99,7 @@ ul li {
 
 .form__input {
   padding: 10px 25px;
-  width: 100%;
+  /* width: 100%; */
   max-width: 243px;
   height: 38px;
   background-color: #f5f5f5;
@@ -135,6 +136,7 @@ ul li {
 }
 
 .line1 {
+  width: 100%;
   border: 0.5px solid #d9d9d9;
   margin-bottom: 40px;
 }
@@ -174,6 +176,11 @@ ul li {
 .shop__now {
   color: #fff;
   font-size: 16px;
+}
+
+.iphone__img {
+  width: 100%;
+  max-width: 490px;
 }
 
 main {
@@ -522,116 +529,13 @@ li button:hover {
   border: 1px solid #9d9d9d;
 }
 
-/* .form__login {
-  display: block;
-}
-
-.form-control {
-  margin-bottom: 3rem;
-}
-
-.form__login {
-  max-width: 500px;
-  margin: auto;
-}
-
-label {
-  margin-bottom: 0.8rem;
-}
-
-.form-control input {
-  border: none;
-  border-bottom: 2px solid;
-  padding: 0.5rem;
-  width: 600px;
-  max-width: 600px;
-}
-
-.form-control input:focus {
-  outline: none;
-  border-bottom-color: blue;
-}
-
-.login-button[disabled] {
-  pointer-events: none;
-}
-
-.logoLogin {
-  padding: 61px;
-  padding-left: 650px;
-}
-
-.logoLogin a {
-  font-size: 64px;
-  text-decoration: none;
-  color: #454444;
-}
-
-.login__h2 {
-  padding-left: 60px;
-  padding-top: 20px;
-  font-size: 16px;
-}
-
-button[submit] {
-  width: 600px;
-}
-
-.forgot1 a {
-  
-padding-left: 225px;
-text-align: center;
-font-size: 16px;
-color: #000;
-}
-
-.loginBtn button {
-  width: 600px;
-  font-size: 32px;
-  margin-bottom: 85px;
-  
-  color: #000;
-  outline: none;
-  border: 1px solid;
-  transition: 0.3s;
-}
-
-.loginBtn button:hover {
-  color: #fff;
-  background-color: #454444;
-}
-
-.cont {
-  display: flex;
-  gap: 50px;
-  align-items: center;
-  padding-left: 430px;
-  padding-bottom: 50px;
-}
-
-.cont__img {
-  display: flex;
-  gap: 35px;
-  width: 65px;
-  height: 65px;
-}
-
-.have__user a {
-  padding-top: 50px;
-  padding-left: 500px;
-  padding-bottom: 100px;
-  text-align: center;
-  font-size: 20px;
-  color: #000;
-} */
-
 /* LOGIN PAGE */
 
 .login {
   display: flex;
   gap: 130px;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .side__img {
@@ -742,4 +646,175 @@ button[submit] {
 .loginBtn button:hover {
   color: #fff;
   background-color: orangered;
+}
+
+@media (max-width: 448px) {
+  .intro2 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .cards {
+    padding-bottom: 70px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .head__text {
+    width: 100%;
+    max-width: 550px;
+    font-size: 14px;
+  }
+  .head__english {
+    padding-right: 15px;
+  }
+  .form__input {
+    margin-top: 10px;
+    margin-bottom: 24px;
+  }
+  .line1 {
+    width: 100%;
+    max-width: 550px;
+  }
+
+  ul {
+    padding-top: 24px;
+    gap: 35px;
+  }
+  .products-container {
+    margin-left: 90px;
+  }
+  .line1__cotigories {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  main {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .iphone__img {
+    margin-top: 32px;
+  }
+  .header__logo a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 766px) {
+  .cotigories__text {
+    font-size: 24px;
+  }
+  .iphone__img {
+    margin-top: 32px;
+  }
+  .header__logo a {
+    font-size: 28px;
+  }
+  .head__text {
+    width: 100%;
+    max-width: 550px;
+    font-size: 20px;
+  }
+  .line1 {
+    width: 100%;
+  }
+  .head__english {
+    font-size: 20px;
+    padding-right: 15px;
+  }
+  .intro2 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .cards {
+    padding-bottom: 70px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .products-container {
+    margin-left: 60px;
+  }
+  ul {
+    padding-top: 24px;
+    padding-bottom: 20px;
+    gap: 36px;
+  }
+  .line1__cotigories {
+    font-size: 32px;
+  }
+}
+@media (max-width: 976px) {
+  .cotigories__text {
+    font-size: 24px;
+  }
+  .iphone__img {
+    margin-top: 32px;
+  }
+  .header__logo a {
+    font-size: 36px;
+  }
+  .head__text {
+    width: 100%;
+    max-width: 550px;
+    font-size: 20px;
+  }
+  .line1 {
+    width: 100%;
+  }
+  .head__english {
+    font-size: 20px;
+    padding-right: 15px;
+  }
+  .intro2 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .cards {
+    padding-bottom: 70px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .products-container {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  ul {
+    padding-top: 24px;
+    padding-bottom: 20px;
+    gap: 35px;
+  }
+  .line1__cotigories {
+    font-size: 28px;
+  }
+
+  .line__cotigories {
+    font-size: 28px;
+  }
+}
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 448px) {
+  .side__img {
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    /* height: 780px; */
+  }
+  .login {
+    flex-wrap: wrap;
+  }
+  .loginTitle {
+    padding: 24px 34px;
+  }
+  .login__h1 {
+    font-size: 20px;
+    padding-bottom: 24px;
+  }
+}
+@media (max-width: 766px) {
+}
+@media (max-width: 976px) {
+}
+@media (max-width: 1200px) {
 }
