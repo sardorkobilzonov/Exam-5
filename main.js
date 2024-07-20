@@ -5,7 +5,7 @@ const container = document.querySelector(".products-container");
 async function fetchProducts() {
   container.insertAdjacentHTML("afterbegin", "<div class='spinner'></div>");
 
-  const response = await fetch("https://fakestoreapi.com/products");
+  const response = await fetch("https://api.escuelajs.co/api/v1/products");
   const products = await response.json();
 
   return products;
@@ -16,47 +16,36 @@ function renderProducts(products) {
   spinner.remove();
 
   products.forEach((product) => {
-    const li = document.createElement("li");
-    li.style.width = "230px";
-    li.style.height = "550px";
+    const input = document.createElement("input");
+    input.style.width = "230px";
+    input.style.height = "550px";
 
     const imgLink = document.createElement("a");
     imgLink.href = `/product.html?id=${product.id}&title=${product.title}`;
     const img = document.createElement("img");
     img.src = product.image;
     imgLink.append(img);
-    li.append(imgLink);
+    input.append(imgLink);
 
-    const title = document.createElement("h3");
+    const title = document.createElement("input");
     title.textContent = product.title;
-    li.append(title);
+    input.append(title);
 
     const ratingContainer = document.createElement("div");
     ratingContainer.style.display = "flex";
     ratingContainer.style.gap = "1rem";
 
-    const starsContainer = document.createElement("div");
-    starsContainer.insertAdjacentHTML(
-      "beforeend",
-      "<span>⭐</span>".repeat(Math.round(product.rating.rate))
-    );
-    ratingContainer.append(starsContainer);
+    input.append(ratingContainer);
 
-    const ratingCount = document.createElement("div");
-    ratingCount.textContent = `(${product.rating.count})`;
-    ratingContainer.append(ratingCount);
-
-    li.append(ratingContainer);
-
-    const price = document.createElement("strong");
+    const price = document.createElement("input");
     price.textContent = `$${product.price}`;
-    li.append(price);
+    input.append(price);
 
     const btn = document.createElement("button");
-    btn.textContent = "Add  to cart";
-    li.append(btn);
+    btn.textContent = "Add";
+    input.append(btn);
 
-    container.append(li);
+    container.append(input);
   });
 }
 
